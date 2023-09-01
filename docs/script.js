@@ -17,8 +17,7 @@ function createCard(data) {
     }
     image.src =  source;
     image.setAttribute("class","bd-placeholder-img card-img-top");
-    image.setAttribute("width","100%");
-    image.setAttribute("height","100%");
+    
 
     image.addEventListener('click', () => {
         handleCardClick(data.name);
