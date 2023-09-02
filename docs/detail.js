@@ -10,7 +10,7 @@ function displayCardDetails(data) {
 
 
     imageElement = document.getElementById("screenshot")
-    imageElement.src = (data.attr.media.screenshot ? "https://raw.githubusercontent.com/christianhaitian/PortMaster/main/images/" + data.attr.media.screenshot : "https://raw.githubusercontent.com/christopher-roelofs/portmaster-ports/main/no.image.png");
+    imageElement.src = (data.attr.media.screenshot ? "https://raw.githubusercontent.com/christianhaitian/PortMaster/main/images/" + data.attr.media.screenshot : "https://raw.githubusercontent.com/PortsMaster/PortMaster-Wiki/main/no.image.png");
 
 
     //data.attr.desc ? document.getEleme('desc').textContent = data.attr.desc : document.getElementsByClassName('desc').hidden = true;
@@ -56,7 +56,7 @@ async function fetchDataAndDisplayDetails() {
 
 
 
-        var response = await fetch('https://raw.githubusercontent.com/christopher-roelofs/portmaster-ports/main/ports.json'); // Replace 'YOUR_JSON_URL_HERE' with the actual URL of your JSON data.
+        var response = await fetch('https://raw.githubusercontent.com/PortsMaster/PortMaster-Wiki/main/ports.json'); // Replace 'YOUR_JSON_URL_HERE' with the actual URL of your JSON data.
         if (!response.ok) {
             throw new Error('Network response was not ok.');
         }
