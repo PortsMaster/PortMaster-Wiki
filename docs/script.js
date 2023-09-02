@@ -75,7 +75,7 @@ function createCard(data) {
 
     const small = document.createElement('small');
     small.setAttribute("class","text-body-secondary");
-    small.textContent = "Downloads: " + countsData["ports"][data.name];
+    small.textContent = "Downloads: " + (countsData["ports"][data.name] ? countsData["ports"][data.name] : "0");
 
 
     div4.appendChild(small);

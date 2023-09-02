@@ -80,7 +80,7 @@ async function fetchDataAndDisplayDetails() {
             console.error('Error fetching JSON data:', error);
         }
 
-        card["download_count"] = countsData["ports"][card.name]
+        card["download_count"] = (countsData["ports"][card.name] ? countsData["ports"][card.name] : "0");
 
         if (card) {
             displayCardDetails(card);
