@@ -128,14 +128,14 @@ function filterCards() {
     };
     displayCards(filteredData);
     const nameElement = document.getElementById("name");
-    const descriptionElement = document.getElementById("description");
+    const descriptionElement = document.getElementById("bio");
     const socialElement = document.getElementById("social");
     const webpageElement = document.getElementById("webpage");
     const supportElement = document.getElementById("support");
     const coverElement = document.getElementById("avatar");
 
     nameElement.textContent = portersData[searchQuery].name;
-    descriptionElement.textContent = portersData[searchQuery].description ? portersData[searchQuery].description : "";
+    descriptionElement.textContent = portersData[searchQuery].bio ? portersData[searchQuery].bio : "";
     socialElement.setAttribute("href",portersData[searchQuery].social)
     webpageElement.setAttribute("href",portersData[searchQuery].webpage)
     supportElement.setAttribute("href",portersData[searchQuery].support)
