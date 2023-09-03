@@ -1,5 +1,44 @@
 var jsonData = null;
 var countsData = null;
+var AZ = true;
+var Newest = false;
+var Downloaded = false;
+
+
+function sortAZ(){
+    AZ = true;
+    Newest = false;
+    Downloaded = false;
+    const newestCheck = document.getElementById('sortNewest');
+    const downloadedCheck = document.getElementById('sortDownloaded');
+    downloadedCheck.checked = false;
+    newestCheck.checked = false;
+    filterCards();
+}
+
+function sortNewest(){
+    AZ = false;
+    Downloaded = false;
+    Newest = true;
+    const azCheck = document.getElementById('sortAZ');
+    const downloadedCheck = document.getElementById('sortDownloaded');
+    azCheck.checked = false;
+    downloadedCheck.checked = false;
+    filterCards();
+}
+
+function sortDownloaded(){
+    AZ = false;
+    Newest = false;
+    Downloaded = true;
+    const newestCheck = document.getElementById('sortNewest');
+    const azCheck = document.getElementById('sortAZ');
+    azCheck.checked = false;
+    newestCheck.checked = false;
+    filterCards();
+}
+
+
 // Function to create a card element for each JSON object
 // https://discord.gg/JxYBp9HTAY
 function createCard(data) {
@@ -47,7 +86,7 @@ function createCard(data) {
     porter.setAttribute("class","card-text");
     porter.setAttribute("style","padding-top: 10px")
     var porters = data.attr.porter;
-    var porterHtml = "Porters: ";
+    var porterHtml = "Porter: ";
     porters.forEach((porter) => {
         porterHtml += '<a href="profile.html?porter=' + porter +'">' + porter + '</a>';
         if(porters.length > 1) {
@@ -55,6 +94,11 @@ function createCard(data) {
         }
     });
     porter.innerHTML = porterHtml;
+
+    const dateUpdated = document.createElement('p');
+    dateUpdated.setAttribute("class","card-text text-body-secondary");
+    dateUpdated.setAttribute("style","padding-top: 10px")
+    dateUpdated.textContent = "Updated: " + data.date_updated;
 
 
     const div4 = document.createElement('div');
@@ -86,6 +130,7 @@ function createCard(data) {
     div3.appendChild(title);
     div3.appendChild(paragraph);
     div3.appendChild(porter);
+    div3.appendChild(dateUpdated);
     div3.appendChild(div4);
     
     div2.appendChild(div3)
@@ -109,7 +154,7 @@ function displayCards(data) {
 function filterCards() {
     const searchQuery = document.getElementById('search').value.trim().toLowerCase();
     const readyToRun = document.getElementById('ready-to-run').checked;
-    var filteredData = {}
+    var filteredData = []
     var queries = searchQuery.split(" ");
     for (var key of Object.keys(jsonData)) {
         queries.forEach(element => {
@@ -117,18 +162,34 @@ function filterCards() {
 
                 if (readyToRun){
                     if (jsonData[key].attr.rtr){
-                        filteredData[key] = jsonData[key];
+                        filteredData.push(jsonData[key]);
                     }
                 }
                 else {
-                    filteredData[key] = jsonData[key];
-                }
-                
-                
+                    filteredData.push(jsonData[key]);
+                }                
             }
         });
 
     };
+    if (Newest){
+        filteredData.sort(function(a, b) {
+            if (Date.parse(a.date_updated) > Date.parse(b.date_updated))
+            return -1
+          });
+    }
+
+    if (AZ){
+        filteredData.sort();
+    }
+
+    if (Downloaded){
+        filteredData.sort(function(a, b) {
+            if (a.download_count > b.download_count)
+            return -1
+          });
+    }
+
     displayCards(filteredData);
 }
 
@@ -141,26 +202,34 @@ function handleCardClick(name) {
 async function fetchDataAndDisplayCards() {
 
     try {
-        var response = await fetch('https://raw.githubusercontent.com/PortsMaster/PortMaster-Info/main/port_stats.json'); // Replace 'YOUR_JSON_URL_HERE' with the actual URL of your JSON data.
-        if (!response.ok) {
-            throw new Error('Network response was not ok.');
-        }
-        countsData = await response.json();
-    } catch (error) {
-        console.error('Error fetching JSON data:', error);
-    }
-
-    try {
         var response = await fetch('https://raw.githubusercontent.com/PortsMaster/PortMaster-Wiki/main/ports.json'); // Replace 'YOUR_JSON_URL_HERE' with the actual URL of your JSON data.
         if (!response.ok) {
             throw new Error('Network response was not ok.');
         }
         jsonData = await response.json();
         jsonData = jsonData.ports
-        displayCards(jsonData);
     } catch (error) {
         console.error('Error fetching JSON data:', error);
     }
+
+    try {
+        var response = await fetch('https://raw.githubusercontent.com/PortsMaster/PortMaster-Info/main/port_stats.json'); // Replace 'YOUR_JSON_URL_HERE' with the actual URL of your JSON data.
+        if (!response.ok) {
+            throw new Error('Network response was not ok.');
+        }
+        countsData = await response.json();
+        for (var port of jsonData){
+            port["download_count"] = countsData["ports"][port.name];
+        }
+
+    } catch (error) {
+        console.error('Error fetching JSON data:', error);
+    }
+
+
+
+    filterCards();
+
 }
 
 // Call the initial fetchDataAndDisplayCards function when the page is loaded

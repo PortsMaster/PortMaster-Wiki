@@ -22,6 +22,9 @@ function displayCardDetails(data) {
     const downloadCountElement = document.getElementById("download_count");
     downloadCountElement.textContent = data.download_count;
 
+    const lastUpdatedElement = document.getElementById("last_updated");
+    lastUpdatedElement.textContent = data.date_updated;
+
 
     var taggedGenres = "";
     data.attr.genres.forEach((genre) => {
@@ -38,6 +41,7 @@ function displayCardDetails(data) {
         }
     });
     data.attr.porter ? document.getElementById('porter').innerHTML = porterHtml: document.getElementsByClassName('porter').hidden = true;
+
 
     const downloadElement = document.getElementById("download");
     downloadElement.setAttribute("onclick", "window.location.href='" + data.download_url + "';");

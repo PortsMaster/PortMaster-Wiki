@@ -62,6 +62,11 @@ function createCard(data) {
     });
     porter.innerHTML = porterHtml;
 
+    const dateUpdated = document.createElement('p');
+    dateUpdated.setAttribute("class","card-text text-body-secondary");
+    dateUpdated.setAttribute("style","padding-top: 10px")
+    dateUpdated.textContent = "Updated: " + data.date_updated;
+
 
     const div4 = document.createElement('div');
     div4.setAttribute("class", "d-flex justify-content-between align-items-center");
@@ -92,6 +97,7 @@ function createCard(data) {
     div3.appendChild(title);
     div3.appendChild(paragraph);
     div3.appendChild(porter);
+    div3.appendChild(dateUpdated);
     div3.appendChild(div4);
 
     div2.appendChild(div3)
@@ -129,7 +135,7 @@ function filterCards() {
     const coverElement = document.getElementById("avatar");
 
     nameElement.textContent = portersData[searchQuery].name;
-    descriptionElement.textContent = portersData[searchQuery].description;
+    descriptionElement.textContent = portersData[searchQuery].description ? portersData[searchQuery].description : "";
     socialElement.setAttribute("href",portersData[searchQuery].social)
     webpageElement.setAttribute("href",portersData[searchQuery].webpage)
     supportElement.setAttribute("href",portersData[searchQuery].support)
