@@ -72,7 +72,10 @@
         {
             "version": 2,
             "name": "abombniball.zip",
-            "items": [],
+            "items": [
+                "Abombniball.sh",
+                "abombniball/"
+            ],
             "items_opt": null,
             "attr": {
                 "title": "Abombniball",
@@ -97,8 +100,8 @@
             },
             "download_url": "https://github.com/PortsMaster/PortMaster-Releases/releases/latest/download/abombniball.zip",
             "download_size": 2024324,
-            "date_added": "2023-09-02",
-            "date_updated": "2023-09-02"
+            "date_added": "2023-08-12",
+            "date_updated": "2023-08-12"
         },
         {
             "version": 2,
@@ -1934,8 +1937,8 @@
             },
             "download_url": "https://github.com/PortsMaster/PortMaster-Releases/releases/latest/download/Farmner.zip",
             "download_size": 148411440,
-            "date_added": "2023-09-02",
-            "date_updated": "2023-09-02"
+            "date_added": "2023-09-05",
+            "date_updated": "2023-09-05"
         },
         {
             "version": 2,
@@ -2141,8 +2144,8 @@
             },
             "download_url": "https://github.com/PortsMaster/PortMaster-Releases/releases/latest/download/freedroid.zip",
             "download_size": 245620140,
-            "date_added": "2023-09-02",
-            "date_updated": "2023-09-02"
+            "date_added": "2023-09-05",
+            "date_updated": "2023-09-05"
         },
         {
             "version": 2,
@@ -2317,7 +2320,10 @@
         {
             "version": 2,
             "name": "gnurobbo.zip",
-            "items": [],
+            "items": [
+                "GNU Robbo.sh",
+                "gnurobbo/"
+            ],
             "items_opt": null,
             "attr": {
                 "title": "GNU Robbo",
@@ -2450,6 +2456,42 @@
             "download_size": 238265,
             "date_added": "2021-09-10",
             "date_updated": "2023-04-07"
+        },
+        {
+            "version": 2,
+            "name": "hota.zip",
+            "items": [
+                "Heart Of The Alien Redux.sh",
+                "hota/"
+            ],
+            "items_opt": null,
+            "attr": {
+                "title": "Heart of The Alien Redux",
+                "desc": "Heart of The Alien Redux is a native port of Heart of The Alien. Place Heart Of The Alien (U).iso and Heart Of The Alien (U) xx.ogg or Heart Of The Alien (U) xx.mp3 02-42 in the data folder. The files must be named correctly",
+                "inst": "",
+                "genres": [
+                    "action",
+                    "adventure",
+                    "platformer"
+                ],
+                "porter": [
+                    "Bamboozler"
+                ],
+                "image": {},
+                "rtr": false,
+                "runtime": null,
+                "reqs": [],
+                "media": {
+                    "screenshot": "hota.screenshot.jpg",
+                    "cover": null,
+                    "thumbnail": null,
+                    "video": null
+                }
+            },
+            "download_url": "https://github.com/PortsMaster/PortMaster-Releases/releases/latest/download/HOTA.zip",
+            "download_size": 126157,
+            "date_added": "2023-09-03",
+            "date_updated": "2023-09-03"
         },
         {
             "version": 2,
@@ -4883,7 +4925,7 @@
             "download_url": "https://github.com/PortsMaster/PortMaster-Releases/releases/latest/download/SDLPoP.zip",
             "download_size": 750603,
             "date_added": "2021-09-10",
-            "date_updated": "2022-04-28"
+            "date_updated": "2023-08-27"
         },
         {
             "version": 2,
@@ -6290,7 +6332,7 @@
     "utils": {
         "mono-6.12.0.122-aarch64.squashfs": {
             "name": "Mono 6.12.0.122",
-            "download_url": "https://github.com/PortsMaster/PortMaster-Releases/releases/download/2023-09-02_1303/mono-6.12.0.122-aarch64.squashfs",
+            "download_url": "https://github.com/PortsMaster/PortMaster-Releases/releases/download/2023-09-04_2219/mono-6.12.0.122-aarch64.squashfs",
             "download_size": 262057984
         },
         "frt_2.1.6.squashfs": {
