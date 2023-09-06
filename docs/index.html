@@ -206,7 +206,7 @@
               </ul>
             </li>
           </ul>
-          <form role="search">
+          <form role="search" onkeydown="return event.key != 'Enter';">
             <input id="search" oninput="filterCards()" class="form-control" type="search" placeholder="Search" aria-label="Search">
           </form>
         </div>
