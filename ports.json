@@ -1080,7 +1080,10 @@
         {
             "version": 2,
             "name": "clockwind.zip",
-            "items": [],
+            "items": [
+                "Clockwind.sh",
+                "clockwind/"
+            ],
             "items_opt": null,
             "attr": {
                 "title": "Clockwind",
@@ -1528,6 +1531,37 @@
         },
         {
             "version": 2,
+            "name": "donut.dodo.zip",
+            "items": [],
+            "items_opt": null,
+            "attr": {
+                "title": "Donut Dodo",
+                "desc": "If a long lost arcade game from 1983 resurfaced today, it would be Donut Dodo -- a classic 2D platformer from the golden era, tough as nails and challenging for the whole family! You can purchase Donut Dodo at: https://zapposh.itch.io/donut-dodo-retropie-edition\\n\\nDownload and extract it, and place the DonutDodo.pck file in the gamedata directory. This has been tested with DonutDodo_1_39.zip",
+                "inst": "",
+                "genres": [
+                    "platformer"
+                ],
+                "porter": [
+                    "tabreturn"
+                ],
+                "image": {},
+                "rtr": false,
+                "runtime": null,
+                "reqs": [],
+                "media": {
+                    "screenshot": null,
+                    "cover": null,
+                    "thumbnail": null,
+                    "video": null
+                }
+            },
+            "download_url": "https://github.com/PortsMaster/PortMaster-Releases/releases/latest/download/Donut.Dodo.zip",
+            "download_size": 3600,
+            "date_added": "2023-09-11",
+            "date_updated": "2023-09-11"
+        },
+        {
+            "version": 2,
             "name": "duke.nukem.3d.zip",
             "items": [
                 "Duke Nukem 3D.sh",
@@ -1968,8 +2002,8 @@
             },
             "download_url": "https://github.com/PortsMaster/PortMaster-Releases/releases/latest/download/Farmner.zip",
             "download_size": 148411440,
-            "date_added": "2023-09-07",
-            "date_updated": "2023-09-07"
+            "date_added": "2023-09-11",
+            "date_updated": "2023-09-11"
         },
         {
             "version": 2,
@@ -2175,8 +2209,8 @@
             },
             "download_url": "https://github.com/PortsMaster/PortMaster-Releases/releases/latest/download/freedroid.zip",
             "download_size": 245620140,
-            "date_added": "2023-09-07",
-            "date_updated": "2023-09-07"
+            "date_added": "2023-09-11",
+            "date_updated": "2023-09-11"
         },
         {
             "version": 2,
@@ -2278,7 +2312,7 @@
                 }
             },
             "download_url": "https://github.com/PortsMaster/PortMaster-Releases/releases/latest/download/GemRB.zip",
-            "download_size": 35573569,
+            "download_size": 34617329,
             "date_added": "2023-02-12",
             "date_updated": "2023-02-12"
         },
@@ -2381,7 +2415,7 @@
             "download_url": "https://github.com/PortsMaster/PortMaster-Releases/releases/latest/download/GNURobbo.zip",
             "download_size": 4313864,
             "date_added": "2023-09-02",
-            "date_updated": "2023-09-02"
+            "date_updated": "2023-09-07"
         },
         {
             "version": 2,
@@ -3247,6 +3281,37 @@
         },
         {
             "version": 2,
+            "name": "murtop.zip",
+            "items": [],
+            "items_opt": null,
+            "attr": {
+                "title": "Murtop",
+                "desc": "Fast-paced arcade game packed with action, as if it was taken out directly from the 80's, where Dig Dug meets Bomberman. You can purchase Murtop at: https://hiulit.itch.io/murtop. Download and extract it, and place the Murtop.pck file in the gamedata directory. This has been tested with Murtop ARM 64, version 1.2.0",
+                "inst": "",
+                "genres": [
+                    "platformer"
+                ],
+                "porter": [
+                    "tabreturn"
+                ],
+                "image": {},
+                "rtr": false,
+                "runtime": null,
+                "reqs": [],
+                "media": {
+                    "screenshot": "murtop.screenshot.png",
+                    "cover": null,
+                    "thumbnail": null,
+                    "video": null
+                }
+            },
+            "download_url": "https://github.com/PortsMaster/PortMaster-Releases/releases/latest/download/Murtop.zip",
+            "download_size": 3515,
+            "date_added": "2023-09-11",
+            "date_updated": "2023-09-11"
+        },
+        {
+            "version": 2,
             "name": "nam.zip",
             "items": [
                 "NAM.sh",
@@ -3933,6 +3998,37 @@
         },
         {
             "version": 2,
+            "name": "paused.zip",
+            "items": [],
+            "items_opt": null,
+            "attr": {
+                "title": "Paused",
+                "desc": "What do ducks have to do with rabbits? Exactly, adventure and physics stuff are what you are looking for. Game files are already included and ready to go.",
+                "inst": "",
+                "genres": [
+                    "puzzle"
+                ],
+                "porter": [
+                    "tabreturn"
+                ],
+                "image": {},
+                "rtr": false,
+                "runtime": null,
+                "reqs": [],
+                "media": {
+                    "screenshot": null,
+                    "cover": null,
+                    "thumbnail": null,
+                    "video": null
+                }
+            },
+            "download_url": "https://github.com/PortsMaster/PortMaster-Releases/releases/latest/download/PAUSED.zip",
+            "download_size": 9636235,
+            "date_added": "2023-09-11",
+            "date_updated": "2023-09-11"
+        },
+        {
+            "version": 2,
             "name": "pekka-kana-2.zip",
             "items": [
                 "Pekka Kana 2.sh",
@@ -4031,7 +4127,7 @@
             "download_url": "https://github.com/PortsMaster/PortMaster-Releases/releases/latest/download/planetWaves.zip",
             "download_size": 31387562,
             "date_added": "2023-06-09",
-            "date_updated": "2023-06-09"
+            "date_updated": "2023-09-05"
         },
         {
             "version": 2,
@@ -5541,7 +5637,10 @@
         {
             "version": 2,
             "name": "thecurseofissyos.zip",
-            "items": [],
+            "items": [
+                "Coi.sh",
+                "coi/"
+            ],
             "items_opt": null,
             "attr": {
                 "title": "The Curse Of Issyos",
@@ -5567,8 +5666,8 @@
             },
             "download_url": "https://github.com/PortsMaster/PortMaster-Releases/releases/latest/download/TheCurseOfIssyos.zip",
             "download_size": 11349009,
-            "date_added": "2023-09-07",
-            "date_updated": "2023-09-07"
+            "date_added": "2023-09-06",
+            "date_updated": "2023-09-06"
         },
         {
             "version": 2,
@@ -5604,6 +5703,37 @@
             "download_size": 22785652,
             "date_added": "2023-05-03",
             "date_updated": "2023-05-03"
+        },
+        {
+            "version": 2,
+            "name": "starboy.zip",
+            "items": [],
+            "items_opt": null,
+            "attr": {
+                "title": "Thwack",
+                "desc": "Funky-legged tennis game. Thwack demo/jam files are already included and ready to go. The full game is available for purchase at https://jontopielski.itch.io/thwack. To run the full game, down ThwackLinux.zip, extract it, and copy the Thwack.pck file into the gamedata directory.",
+                "inst": "",
+                "genres": [
+                    "platformer"
+                ],
+                "porter": [
+                    "tabreturn"
+                ],
+                "image": {},
+                "rtr": false,
+                "runtime": null,
+                "reqs": [],
+                "media": {
+                    "screenshot": "starboy.screenshot.png",
+                    "cover": null,
+                    "thumbnail": null,
+                    "video": null
+                }
+            },
+            "download_url": "https://github.com/PortsMaster/PortMaster-Releases/releases/latest/download/StarBoy.zip",
+            "download_size": 3552,
+            "date_added": "2023-09-11",
+            "date_updated": "2023-09-11"
         },
         {
             "version": 2,
@@ -5915,7 +6045,11 @@
         {
             "version": 2,
             "name": "valhalla.zip",
-            "items": [],
+            "items": [
+                "valhalla/",
+                "Valhalla.sh",
+                "Valhalla/"
+            ],
             "items_opt": null,
             "attr": {
                 "title": "VA-11 Hall-A:Cyberpunk Bartender Action",
@@ -5940,8 +6074,8 @@
             },
             "download_url": "https://github.com/PortsMaster/PortMaster-Releases/releases/latest/download/Valhalla.zip",
             "download_size": 11496765,
-            "date_added": "2023-09-07",
-            "date_updated": "2023-09-07"
+            "date_added": "2023-09-06",
+            "date_updated": "2023-09-06"
         },
         {
             "version": 2,
@@ -6357,7 +6491,10 @@
         {
             "version": 2,
             "name": "zeroranger.zip",
-            "items": [],
+            "items": [
+                "zeroranger/",
+                "Zeroranger.sh"
+            ],
             "items_opt": null,
             "attr": {
                 "title": "Zeroranger",
@@ -6383,7 +6520,7 @@
             },
             "download_url": "https://github.com/PortsMaster/PortMaster-Releases/releases/latest/download/ZeroRanger.zip",
             "download_size": 17523628,
-            "date_added": "2023-09-07",
+            "date_added": "2023-09-06",
             "date_updated": "2023-09-07"
         },
         {
@@ -6458,7 +6595,7 @@
     "utils": {
         "mono-6.12.0.122-aarch64.squashfs": {
             "name": "Mono 6.12.0.122",
-            "download_url": "https://github.com/PortsMaster/PortMaster-Releases/releases/download/2023-09-07_1940/mono-6.12.0.122-aarch64.squashfs",
+            "download_url": "https://github.com/PortsMaster/PortMaster-Releases/releases/download/2023-09-10_1432/mono-6.12.0.122-aarch64.squashfs",
             "download_size": 262057984
         },
         "frt_2.1.6.squashfs": {
